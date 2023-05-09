@@ -1,0 +1,9 @@
+<div class="carousel">
+    <div class="carousel-inner">
+      <img *ngFor="let image of images; let i = index" [src]="image" [alt]="'Slide ' + (i + 1)" [class.active]="i === currentIndex" class="carousel-image">
+
+      <div class="carousel-dots">
+        <span *ngFor="let image of images; let i = index" (click)="showImage(i)" [class.active]="i === currentIndex" class="carousel-dot"></span>
+      </div>
+    </div>
+  </div>

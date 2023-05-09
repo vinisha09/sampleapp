@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DetailsPageComponent,
-    HighlightDirective
+    HighlightDirective,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
